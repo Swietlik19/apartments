@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Квартиры</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Custom Browsers Color Start-->
+    <meta name="theme-color" content="#0B1739">
+    <!-- Custom Browsers Color End-->
+    <link rel="stylesheet" href="libs/normalize.min.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/jRange/jquery.range.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page_wr" id="page_wr">
+      <section class="scr1" id="scr1">
+        <div class="wr">
+          <div class="scr1__df">
+            <div class="scr1__apartments">
+              <h1 class="page-title">Квартиры</h1>
+              <div class="scr1__wrap">
+                <div class="scr1__row scr1__row--sort">
+                  <div class="scr1__col"><span>Планировка</span></div>
+                  <div class="scr1__col"><span>Квартира</span></div>
+                  <div class="scr1__col">
+                    <button class="scr1__sort" type="button" tabindex="0" data-sort="square">S, м<sup>²</sup><span class="scr1__sort-arrow scr1__sort-arrow--asc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span><span class="scr1__sort-arrow scr1__sort-arrow--desc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="scr1__col">
+                    <button class="scr1__sort" type="button" tabindex="0" data-sort="stage">Этаж<span class="scr1__sort-arrow scr1__sort-arrow--asc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span><span class="scr1__sort-arrow scr1__sort-arrow--desc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="scr1__col">
+                    <button class="scr1__sort scr1__sort--active scr1__sort--asc" type="button" tabindex="0" data-sort="price">Цена, ₽<span class="scr1__sort-arrow scr1__sort-arrow--asc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span><span class="scr1__sort-arrow scr1__sort-arrow--desc">
+                        <svg class="icon">
+                          <use xlink:href="img/svg/sprite.svg#arrow-sort"></use>
+                        </svg></span></button>
+                  </div>
+                </div>
+                <div class="scr1__content"></div>
+              </div>
+              <div class="scr1__btns">
+                <div class="btn__wrap"><a class="xbtn js-load-more" href="#" data-count="20">Загрузить еще</a></div>
+              </div>
+            </div>
+            <aside class="scr1__filters">
+              <form>
+                <div class="scr1__filters-rooms">
+                  <div class="scr1__filters-rooms-item">
+                    <label>
+                      <input type="checkbox" name="rooms" value="1"><span>1к</span>
+                    </label>
+                  </div>
+                  <div class="scr1__filters-rooms-item">
+                    <label>
+                      <input type="checkbox" name="rooms" value="2" checked><span>2к</span>
+                    </label>
+                  </div>
+                  <div class="scr1__filters-rooms-item">
+                    <label>
+                      <input type="checkbox" name="rooms" value="3"><span>3к</span>
+                    </label>
+                  </div>
+                  <div class="scr1__filters-rooms-item">
+                    <label>
+                      <input type="checkbox" name="rooms" value="4" disabled><span>4к</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="scr1__filters-range">
+                  <div class="scr1__range">
+                    <label>Стомость квартиры, ₽ <input class="wpcf7-form-control wpcf7-text wpcf7-count scr1__range-item scr1__range-item--price" type="text" name="range-price" aria-required="true" aria-invalid="false" data-min="5500000" data-max="18900000" value="5500000,18900000">
+                    </label>
+                  </div>
+                </div>
+                <div class="scr1__filters-range">
+                  <div class="scr1__range">
+                    <label>Площадь, м<sup>²</sup>
+                      <input class="wpcf7-form-control wpcf7-text wpcf7-count scr1__range-item scr1__range-item--square" type="hidden" name="range-price" aria-required="true" aria-invalid="false" data-min="33" data-max="123" value="33,123">
+                    </label>
+                  </div>
+                </div>
+                <div class="scr1__filters-btns">
+                  <button class="js-btn-reset" type="reset">Сбросить параметры</button>
+                </div>
+              </form>
+            </aside>
+          </div>
+        </div>
+        <!-- /.wr-->
+      </section>
+      <!-- /.scr1-->
+      <div class="to-top"></div>
+    </div>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

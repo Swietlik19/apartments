@@ -1,0 +1,258 @@
+.scr1
+  position: relative
+  padding-top: 96px
+  padding-bottom: 96px
+  &__df
+    display: flex
+    align-items: flex-start
+  &__apartments
+    flex-grow: 1
+  &__filters
+    flex-shrink: 0
+    width: 399px
+    margin-left: 80px
+  &__row
+    display: flex
+    padding-bottom: 16px
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1)
+    &--sort
+      .scr1__col
+        font-size: 14px
+    &--content
+      .scr1__col
+        padding-top: 16px
+        span
+          i
+            opacity: 0.5
+            font-style: normal
+  &__col
+    padding-right: 20px
+    &:first-of-type
+      flex-shrink: 0
+      width: 100px
+    &:nth-of-type(2)
+      width: 35.08114856429463%
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5)
+      width: 14.9812734082397%
+    &:nth-of-type(5)
+      padding-right: 0
+    &-df
+      display: flex
+  &__sort
+    position: relative
+    background: none
+    border: none
+    outline: none
+    padding-right: 15px
+    transition: 0.4s ease-in-out
+    cursor: pointer
+    &:hover
+      color: $accent
+    &-arrow
+      position: absolute
+      right: 0
+      width: 7px
+      height: 4px
+      .icon
+        display: block
+        width: 100%
+        height: 100%
+        fill: rgba(#0B1739, .15)
+      &--asc
+        top: 3px
+      &--desc
+        bottom: 3px
+        transform: rotate(180deg)
+    &--asc,
+    &--desc
+      color: $accent
+    &--asc
+      .scr1__sort-arrow--asc
+        .icon
+          fill: $accent
+    &--desc
+      .scr1__sort-arrow--desc
+        .icon
+          fill: $accent
+
+  &__btns
+    padding-top: 48px
+  &__plan
+    display: block
+    text-decoration: none
+    outline: none
+    img
+      display: block
+  &__apartment-title
+    display: block
+    text-decoration: none
+    outline: none
+    margin-top: 0
+    font-size: 16px
+    font-weight: 500
+    transition: 0.4s ease-in-out
+    &:hover
+      color: $accent
+
+  &__filters
+    padding: 40px 40px 43px
+    background-image: $grad
+    &-rooms
+      display: flex
+      flex-wrap: wrap
+      &-item
+        margin: 3px 16px 3px 0
+        &:last-of-type
+          margin-right: 0
+      label
+        span
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 44px
+          height: 44px
+          background: #FFFFFF
+          border-radius: 50%
+          transition: 0.4s ease-in-out
+          cursor: pointer
+        input
+          display: none
+          &:disabled
+            & + span
+              color: rgba(#0B1739, 0.2)
+              cursor: default
+          &:checked
+            & + span
+              background: #3EB57C
+              box-shadow: 0px 6px 20px #95D0A1
+              color: #fff
+        input
+          display: none
+          &:not(:disabled)
+            & + span
+              &:hover
+                box-shadow: 0px 6px 20px #95D0A1
+    &-range
+      padding-top: 30px
+    &-btns
+      padding-top: 39px
+      padding-left: 20px
+      button
+        position: relative
+        background: none
+        outline: none
+        border: none
+        padding-right: 16px
+        cursor: pointer
+        transition: 0.4s ease-in-out
+        &::before
+          content: ''
+          position: absolute
+          top: 4px
+          right: 0
+          display: block
+          width: 8px
+          height: 8px
+          background: transparent url('../img/svg/cross.svg') no-repeat center center
+          background-size: contain
+        &:hover
+          color: $accent
+  &__range
+    label
+      margin-bottom: 8px
+      font-size: 14px
+      input
+        display: none
+    .slider-container
+      margin-top: 30px
+    .back-bar
+      height: 3px
+      background: rgba(#0B1739, 0.1)
+      .selected-bar
+        background: #3EB57C
+      .pointer
+        background: #3EB57C
+        border-color: #3EB57C
+      .pointer-label
+        top: -24px
+        background-image: $grad
+        margin-bottom: 8px
+        font-weight: 500
+        font-size: 14px
+        color: #0B1739
+        &.high
+          transform: translateX(20px)
+    .scale span
+      display: none
+
+
+  @media screen and (max-width: 1170px)
+    &__filters
+      width: 318px
+      margin-left: 28px
+      padding: 20px
+    &__row
+      &--sort
+        .scr1__col
+          &:first-of-type,
+          &:nth-of-type(2)
+            display: none
+          &:nth-of-type(3),
+          &:nth-of-type(4),
+          &:nth-of-type(5)
+            width: auto
+      &--content
+        padding-left: 24px
+        margin-bottom: 4px
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        overflow: hidden
+        .scr1__col
+          font-size: 14px
+          &:last-of-type
+            width: 80px
+    &__wrap
+      flex-grow: 1
+      .scr1__col
+        width: 100%
+    &__df
+      .scr1__col
+        width: auto
+        span
+          font-weight: 500
+    &__btns
+      padding-top: 28px
+
+  // max-width 1170px
+
+  @media screen and (max-width: 991px)
+    padding-top: 36px
+    padding-bottom: 36px
+
+  // max-width 991px
+
+  @media screen and (max-width: 767px)
+    &__df
+      flex-direction: column
+    &__apartments
+      width: 100%
+    &__filters
+      order: -1
+      box-sizing: border-box
+      width: 100%
+      margin-left: 0
+      margin-bottom: 30px
+      &-range
+        padding-top: 20px
+
+  // max-width 767px
+
+  @media screen and (max-width: 500px)
+    padding-top: 30px
+    padding-bottom: 30px
+
+  // max-width 500px
+
+/* scr1 */

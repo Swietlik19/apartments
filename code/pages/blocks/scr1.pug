@@ -1,0 +1,81 @@
+mixin scr1()
+  section.scr1(id="scr1")
+    .wr
+      .scr1__df
+        .scr1__apartments
+          h1.page-title Квартиры
+
+          .scr1__wrap
+            .scr1__row.scr1__row--sort
+              .scr1__col
+                span Планировка
+              .scr1__col
+                span Квартира
+              .scr1__col
+                button.scr1__sort(type="button" tabindex="0" data-sort="square") S, м
+                  sup ²
+                  span.scr1__sort-arrow.scr1__sort-arrow--asc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+                  span.scr1__sort-arrow.scr1__sort-arrow--desc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+              .scr1__col
+                button.scr1__sort(type="button" tabindex="0" data-sort="stage") Этаж
+                  span.scr1__sort-arrow.scr1__sort-arrow--asc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+                  span.scr1__sort-arrow.scr1__sort-arrow--desc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+              .scr1__col
+                button.scr1__sort.scr1__sort--active.scr1__sort--asc(type="button" tabindex="0" data-sort="price") Цена, ₽
+                  span.scr1__sort-arrow.scr1__sort-arrow--asc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+                  span.scr1__sort-arrow.scr1__sort-arrow--desc
+                    svg.icon
+                      use(xlink:href="img/svg/sprite.svg#arrow-sort")
+
+            .scr1__content
+
+          .scr1__btns
+            .btn__wrap
+              a.xbtn.js-load-more(href="#" data-count="20") Загрузить еще
+
+        aside.scr1__filters
+          form
+            .scr1__filters-rooms
+              .scr1__filters-rooms-item
+                label
+                  input(type="checkbox" name="rooms" value="1")
+                  span 1к
+              .scr1__filters-rooms-item
+                label
+                  input(type="checkbox" name="rooms" value="2" checked)
+                  span 2к
+              .scr1__filters-rooms-item
+                label
+                  input(type="checkbox" name="rooms" value="3")
+                  span 3к
+              .scr1__filters-rooms-item
+                label
+                  input(type="checkbox" name="rooms" value="4" disabled)
+                  span 4к
+
+            .scr1__filters-range
+              .scr1__range
+                label Стомость квартиры, ₽
+                  input.wpcf7-form-control.wpcf7-text.wpcf7-count(type="text" class="scr1__range-item scr1__range-item--price" name="range-price" aria-required='true' aria-invalid='false' data-min="5500000" data-max="18900000" value="5500000,18900000")
+
+            .scr1__filters-range
+              .scr1__range
+                label Площадь, м
+                  sup ²
+                  input.wpcf7-form-control.wpcf7-text.wpcf7-count(type="hidden" class="scr1__range-item scr1__range-item--square" name="range-price" aria-required='true' aria-invalid='false' data-min="33" data-max="123" value="33,123")
+
+            .scr1__filters-btns
+              button.js-btn-reset(type="reset") Сбросить параметры
+
+    // /.wr
+  // /.scr1

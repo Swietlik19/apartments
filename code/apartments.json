@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 3,
+        "num": "104",
+        "square": 63.1,
+        "stage": 1,
+        "price": 6630500
+    },
+    {
+        "id": 2,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 3,
+        "num": "105",
+        "square": 63.2,
+        "stage": 2,
+        "price": 6650759
+    },
+    {
+        "id": 3,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 2,
+        "num": "106",
+        "square": 63.2,
+        "stage": 3,
+        "price": 6650759
+    },
+    {
+        "id": 4,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 3,
+        "num": "107",
+        "square": 63.6,
+        "stage": 4,
+        "price": 6671314
+    },
+    {
+        "id": 5,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 1,
+        "num": "108",
+        "square": 60,
+        "stage": 5,
+        "price": 6679554
+    },
+    {
+        "id": 6,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 3,
+        "num": "109",
+        "square": 63.1,
+        "stage": 4,
+        "price": 5630500
+    },
+    {
+        "id": 7,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 2,
+        "num": "110",
+        "square": 63.1,
+        "stage": 3,
+        "price": 7630500
+    },
+    {
+        "id": 8,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 3,
+        "num": "111",
+        "square": 63.1,
+        "stage": 1,
+        "price": 6730500
+    },
+    {
+        "id": 9,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 2,
+        "num": "112",
+        "square": 63.1,
+        "stage": 2,
+        "price": 6620500
+    },
+    {
+        "id": 10,
+        "apt_img_url": "img/svg/apartment.svg",
+        "rooms": 1,
+        "num": "113",
+        "square": 63.1,
+        "stage": 5,
+        "price": 6530500
+    }
+]

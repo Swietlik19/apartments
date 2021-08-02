@@ -1,0 +1,32 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset="UTF-8")
+
+    title Квартиры
+
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='format-detection', content='telephone=no')
+
+    // Custom Browsers Color Start
+    meta(name='theme-color', content='#0B1739')
+    // Custom Browsers Color End
+
+    include blocks/scripts.pug
+    include blocks/styles.pug
+
+    include blocks/scr1.pug
+
+    +styles
+
+  body
+
+    #page_wr.page_wr
+
+      +scr1
+
+      .to-top
+
+    +scripts
